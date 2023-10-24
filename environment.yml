@@ -1,0 +1,11 @@
+name: cloud-env
+channels:
+  - conda-forge
+dependencies:
+  - python = 3.10.6 
+  - gdal = 3.6.3 
+  - pip
+  - pip-tools
+  - pip:
+    - --extra-index-url="https://packages.dea.ga.gov.au"
+    - -r requirements.txt
