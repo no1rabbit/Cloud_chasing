@@ -21,24 +21,15 @@ library(amt)
 library(sjPlot)
 library(readr)
 
-#data1 <- read_csv('python notebooks/Boteti_data.csv')
-#data1 <- data1 %>% select(-anglerads,-cloud_x,-cloud_y, -cloud_time,-distance_to_sw)
-#data2 <- read_csv('python notebooks/CKGR_data.csv')
-#data2$anglerads <-NULL
-#data3 <- read_csv('python notebooks/Schwelle_data.csv')
-#data4<-read_csv('python notebooks/Serengeti_data.csv')
-#data4$anglerads <-NULL
-#data <- rbind(data1,data2,data3,data4)
-#write_csv(data,'python notebooks/all_data.csv',na='')
 
 
-data <- read_csv('python notebooks/Serengeti_data3.csv')
-data<- data %>% mutate(sl_ = sl_/1000)
+data <- read_csv('data/Serengeti_data2.csv')
 
-class(data)
-class(data) <- c("random_steps","bursted_steps_xyt","steps_xyt","steps_xy", class(data))
-
-summary(data)
+data<- data %>% filter(case_ == TRUE) %>% select(date1,ID,site,sl_,ta_,cloud_5mm_rfe,cloud_angle_radians_5mm,magnitude_cloud_5mm,cloud_10mm_rfe,cloud_angle_radians_10mm,magnitude_cloud_10mm,cloud_15mm_rfe,cloud_angle_radians_15mm,magnitude_cloud_15mm) %>% 
+  mutate(sl_ = sl_/1000,
+         magnitude_cloud_5mm = magnitude_cloud_5mm/1000,
+         magnitude_cloud_10mm = magnitude_cloud_10mm/1000,
+         magnitude_cloud_15mm = magnitude_cloud_15mm/1000)
 
 data <- data %>% 
   mutate(months = month(date1,label=T,abbr=T),
@@ -49,14 +40,30 @@ data <- data %>%
            months == 'Apr' | months == 'May' ~ "Apr-May",
            months == 'Jun' | months == 'Jul' ~ "Jun-Jul",
            months == 'Aug' | months == 'Sep' ~ "Aug-Sep"
-         ))
+         ),
+         cloud_direction = if_else(0<cos(cloud_angle_radians_5mm)<1))
 
-data %>% filter(case_ == TRUE) %>% 
-  ggplot(aes(mon2,cloud_angle_radians_5mm))+
+data %>% 
+  ggplot(aes(months,cos(cloud_angle_radians_5mm)))+
   geom_boxplot()
 
+data %>% 
+  ggplot(aes(months,cos(cloud_angle_radians_10mm)))+
+  geom_boxplot()
 
+data %>% 
+  ggplot(aes(months,cos(cloud_angle_radians_15mm)))+
+  geom_boxplot()
 
+data %>% 
+  ggplot(aes(cos(cloud_angle_radians_5mm),magnitude_cloud_5mm))+
+  geom_point()+
+  facet_wrap(~months)
+
+class(data)
+class(data) <- c("random_steps","bursted_steps_xyt","steps_xyt","steps_xy", class(data))
+
+summary(data)
 data1 <- data %>% select(ID,site,case_,sl_,ta_,step_id_,cos_ta_,log_sl_,sl_dist_scale,sl_dist_shape,ta_dist_kappa,NDVI_end, NDVI_start,dNDVI_end, dNDVI_start,distance_to_tamsat_raincloud,
                           angle_to_tamsat_raincloud,
                           turning_angle_difference_tamsat_raincloud,
