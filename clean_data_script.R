@@ -18,15 +18,14 @@ UTMtoLongLat<-function(x,y,inproj,outproj){
 }
 
 
-Serengeti_data <- read_csv("WB_ZB_EL_SNP_DATA_1999-02-25_2022-06-08_Deads_deleted.csv", 
-                                                 col_types = cols(Date = col_datetime(format = "%d/%m/%Y %H:%M")))
+Serengeti_data <- read_csv("data/WB_ZB_EL_SNP_DATA.csv", col_types = cols(Date = col_datetime(format = "%d/%m/%Y %H:%M")))
 
 Serengeti_data <- Serengeti_data %>% 
   mutate(AID = recode(AID,'T5H-5571' = 'W111',
                          'T5H-6142' = 'Z39',
                          'T5H-5600' = 'W112')) %>% 
-  filter(SPECIES == 'WB') %>% 
-  mutate(timestamp = as.POSIXct(Date,"EAT"),
+  #filter(SPECIES == 'WB') %>% 
+  mutate(timestamp = as.POSIXct(Date),
          migrant = if_else(migrant == 0, 'r','m'),
          lat = NA,
          long = NA,
@@ -35,16 +34,16 @@ Serengeti_data <- Serengeti_data %>%
          ID = paste0('S',AID),
          sex = SEX,
          owner = OWNER,
+         species = SPECIES,
          site = 'Serengeti') %>% 
-  select(ID, x, y, lat, long, timestamp, sex, migrant, site, owner, CRS, temperature) %>% 
+  select(ID, species, x, y, lat, long, timestamp, sex, migrant) %>% 
   filter(!is.na(x) &!is.na(y)) %>% 
-  filter(owner != 'STABACH') %>% 
   filter(ID !='SZ39')
 
 new<-UTMtoLongLat(Serengeti_data$x,Serengeti_data$y,21036,4326)
 Serengeti_data$lat<-new$Y; Serengeti_data$long<-new$X
 remove(new)
-write_csv(Serengeti_data, 'cleaned_data/Serengeti_data.csv', na='')
+write_csv(Serengeti_data, 'data/Serengeti_all.csv', na='')
 
 
 #### complete data
