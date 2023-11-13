@@ -24,6 +24,7 @@ library(readr)
 
 
 data <- read_csv('data/Serengeti_data2.csv')
+data <- read_csv('data/Serengeti_all.csv')
 
 data<- data %>% #filter(case_ == TRUE) %>% 
   select(date1,ID,site,case_,sl_,step_id_,sl_dist_shape,sl_dist_scale,cloud_5mm_rfe,cloud_angle_radians_5mm,magnitude_cloud_5mm,cloud_10mm_rfe,cloud_angle_radians_10mm,magnitude_cloud_10mm,cloud_15mm_rfe,cloud_angle_radians_15mm,magnitude_cloud_15mm) %>% 
