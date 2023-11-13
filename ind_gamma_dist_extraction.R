@@ -10,6 +10,12 @@ library(beepr)
 
 #read in data
 data <- read_csv('data/Serengeti_all.csv')
+data <- data %>%
+  mutate(time_diff = abs(as.numeric(difftime(hour(timestamp), 7, units = "hours"))),
+         date = date(timestamp)) %>%
+  group_by(ID,date) %>% 
+  filter(time_diff == min(time_diff))
+
 
 data <- data %>% filter(timestamp > as.Date('2015-01-01')) %>% filter(!ID %in% c('SW76', 'ST5H-5598')) 
 data$timestamp_hour <- round_date(data$timestamp, "hour")
