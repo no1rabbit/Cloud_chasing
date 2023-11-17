@@ -667,7 +667,7 @@ pure-eval==0.2.2
     # via stack-data
 py-partiql-parser==0.3.7
     # via moto
-pyarrow==13.0.0
+pyarrow==14.0.1
     # via dask
 pyasn1==0.5.0
     # via
