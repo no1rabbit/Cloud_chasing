@@ -23,11 +23,11 @@ library(readr)
 
 
 
-data <- read_csv('serengeti.csv')
+data <- read_csv('data/Serengeti_chirps_dataset.csv')
 #data <- read_csv('data/Serengeti_all.csv')
 
 data<- data %>% #filter(case_ == TRUE) %>% 
-  select(date1,species,ID,migrant,case_,sl_,step_id_,sl_dist_shape,sl_dist_scale,best_rainfall,cos_cloud_angle,cloud_dist) %>% 
+  #select(date1,species,ID,migrant,case_,sl_,step_id_,sl_dist_shape,sl_dist_scale,best_rainfall,cos_cloud_angle,cloud_dist) %>% 
   mutate(sl_ = sl_/1000,
          cloud_dist = cloud_dist/1000,
          species = fct_recode(species,
@@ -72,7 +72,9 @@ data <- data %>%
 # June-July –> wet-dry transition
 # Aug-Sept –> core dry
 
+test <- data %>% filter(case_ == TRUE) %>% select("date1","ID","x1_","y1_","species","migrant","year","months")
 
+write_csv(test, file = 'data/serengeti_test.csv',na='')
 data %>% filter(case_ == TRUE & angle_cat_5 != 'no clouds') %>% 
   ggplot(aes(months,cos_cloud_angle, fill=species))+
   geom_boxplot()#+
@@ -180,9 +182,9 @@ data1 %>% select(ID, species, season, log_rss) %>% unnest(cols = c(log_rss)) %>%
   facet_wrap(species~season, scales = 'free')
 
 
-data1 %>% mutate(coef = map(fit, ~ broom::tidy(.x$model,conf.int = T, conf.level = 0.95))) %>%
-  dplyr::select(ID, site, season, coef) %>% unnest(cols = c(coef)) %>% filter(term == 'ca_5') %>% 
-  ggplot(., aes(x = term, y = estimate, group = interaction(ID,season), col = site, pch=season)) +
+d<-data1 %>% mutate(coef = map(fit, ~ broom::tidy(.x$model,conf.int = T, conf.level = 0.95))) %>%
+  dplyr::select(ID, species, season, coef) %>% unnest(cols = c(coef)) %>% filter(term == 'ca_5') %>% 
+  ggplot(., aes(x = term, y = estimate, group = interaction(ID,season), col = species, pch=season)) +
   geom_pointrange(aes(ymin = conf.low, ymax = conf.high),position = position_dodge(width = 0.7), size = 0.8) +
   geom_hline(yintercept = 0, lty = 2) +
   labs(x = "movement metrics", y = "Relative Selection Strength") +
@@ -260,8 +262,8 @@ data2 %>% select(ID, species, migrant,months, log_rss) %>% unnest(cols = c(log_r
 
 
 data1 %>% mutate(coef = map(fit, ~ broom::tidy(.x$model,conf.int = T, conf.level = 0.95))) %>%
-  dplyr::select(ID, site, months, coef) %>% unnest(cols = c(coef)) %>% filter(term == 'ca_5') %>% 
-  ggplot(., aes(x = term, y = estimate, group = interaction(ID,months), col = site, pch=season)) +
+  dplyr::select(ID, species, months, coef) %>% unnest(cols = c(coef)) %>% filter(term == 'ca_5') %>% 
+  ggplot(., aes(x = term, y = estimate, group = interaction(ID,months), col = species, pch=season)) +
   geom_pointrange(aes(ymin = conf.low, ymax = conf.high),position = position_dodge(width = 0.7), size = 0.8) +
   geom_hline(yintercept = 0, lty = 2) +
   labs(x = "movement metrics", y = "Relative Selection Strength") +
