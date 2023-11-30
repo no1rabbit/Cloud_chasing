@@ -6,6 +6,7 @@ library(readr)
 
 ### HMM model for daily summed movement
 
+
 data <- read_csv('data/Serengeti_all.csv')
 data<-data %>%
   group_by(ID) %>%
@@ -39,14 +40,40 @@ anglePar <- kappa0
 formula <- ~ID
 
 d_gammaHMM <- fitHMM(data = data, nbStates=nbStates, dist=list(step=stepDist,angle=angleDist), Par0=list(step=stepPar,angle=anglePar), estAngleMean = list(angle=FALSE), stateNames = stateNames, formula=formula, retryFits=retryFits, ncores=ncores)
-beep(6)
 
 d_gammaHMM
 plotPR(d_gammaHMM)
-plot(d_gammaHMM, plotCI=T,ask=F, plotTracks=F,breaks = 100)
+plot(d_gammaHMM, plotCI=T,ask=F, plotTracks=T,breaks = 100)
 
-data_D <- data_D %>% 
+data <- data %>% 
   mutate(dailystate = viterbi(d_gammaHMM),
          dailystate = case_when(dailystate == 1 ~ "encamped", 
                                 dailystate == 2 ~'migrating'),
          dailystate=factor(dailystate,levels=c("encamped","migrating")))
+
+data <- data %>% 
+  mutate(year = year(date),
+         months = month(date,label=T,abbr=T),
+         mon2 = case_when(
+           months == 'Oct'  | months == 'Nov' ~ "Oct-Nov",
+           months == 'Dec' | months == 'Jan' ~ "Dec-Jan",
+           months == 'Feb' | months == 'Mar' ~ "Feb-Mar",
+           months == 'Apr' | months == 'May' ~ "Apr-May",
+           months == 'Jun' | months == 'Jul' ~ "Jun-Jul",
+           months == 'Aug' | months == 'Sep' ~ "Aug-Sep"
+         ),
+         season = case_when(
+           months %in% c('Nov','Dec','Jan') ~ 'Dry to Wet transition',
+           months %in% c('Feb','Mar','Apr') ~ 'Wet season',
+           months %in% c('May', 'Jun','Jul') ~ 'Wet to Dry transition',
+           TRUE ~ 'Dry season'
+         ))
+
+data %>% 
+  filter(ID == 'SW65') %>% 
+  ggplot(aes(x, y)) +
+  geom_path(aes(color = season, linetype = dailystate)) +
+  geom_point() +
+  facet_wrap(~ID)
+
+write_csv(data, file='serengeti_wb_HMM.csv',na='')
