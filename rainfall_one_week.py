@@ -23,8 +23,29 @@ gps_data['sp_m'] = gps_data['species'] + '_' + gps_data['migrant'].astype(str)
 gps_data = gps_data[gps_data['sp_m'] == 'WB_migrant']
 gps_data['date'] = pd.to_datetime(gps_data['date'])
 gps_data['date'] = gps_data['date'].dt.date
-gps_data['time1'] = pd.to_datetime(gps_data['t1_'])
-gps_data['date1'] = gps_data['time1'].dt.date  # Extract only the date
+
+# change year to start in feb instead of jan
+def get_new_year(date):
+    year = date.year
+    month = date.month
+    if month == 1:
+        year -= 1
+    return pd.Timestamp(year, month, date.day)
+
+gps_data['date'] = gps_data['date'].apply(get_new_year)
+
+# split into seasons
+def get_season(date):
+    if date.month in [11, 12, 1]:
+        return 'dry to wet'
+    elif date.month in [2, 3, 4]:
+        return 'wet'
+    elif date.month in [5, 6, 7]:
+        return 'wet to dry'
+    else:
+        return 'dry'
+
+gps_data['season'] = gps_data['date'].apply(get_season)
 
 gps_data = gps_data.sort_values(by=['ID','date'])
 
@@ -42,6 +63,7 @@ xdata = np.zeros((len(gps_data),image_size,image_size,lag))
 ydata = np.zeros((len(gps_data),2))
 years = np.zeros(len(gps_data))
 
+
 i=0
 for uid in tqdm(gps_data['ID'].unique()):
     current_data = gps_data[gps_data['ID'] == uid]
@@ -54,10 +76,10 @@ for uid in tqdm(gps_data['ID'].unique()):
         # Extract GPS coordinates and time from the DataFrame
         center_x = row['x1_']
         center_y = row['y1_']
-        center_date = row['date1']
+        center_date = row['date']
         # find the row that is step days later
         next_date = center_date + pd.Timedelta(days=step)
-        next_data = current_data[current_data['date1'] == next_date]
+        next_data = current_data[current_data['date'] == next_date]
         if len(next_data) == 0:
             continue
         next_x = next_data['x1_'].values[0]
