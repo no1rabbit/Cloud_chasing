@@ -99,8 +99,8 @@ def train_and_visualize(gps_data, ds, year, image_size, step, lag):
                             time=slice(time_index - lag + 1, time_index+1))
 
             # Extract the 2D array of the variable you want to visualize
-            #data_array = subset.rainfall.values
-            data_array = subset.NDVI.values
+            data_array = subset.rainfall.values
+            #data_array = subset.NDVI.values
 
             # Handle invalid values by replacing NaN and infinite values with 0
             data_array = np.nan_to_num(data_array)
