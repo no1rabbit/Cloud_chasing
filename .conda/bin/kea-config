@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+usage()
+{
+    cat <<EOF
+Usage: kea-config [OPTIONS]
+Options:
+     [--prefix]
+     [--version]
+     [--libs]
+     [--cflags]
+     [--ldflags]
+     [--includes]
+     [--hdfincludes]
+     [--hdfcflags]
+     [--hdflibs]
+EOF
+    exit $1
+}
+if test $# -eq 0; then
+  usage 1 1>&2
+fi
+while test $# -gt 0; do
+case "$1" in
+    -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+    *) optarg= ;;
+esac
+case $1 in
+    --prefix)
+    echo -n "/home/no1rabbit/cloud/.conda "
+     ;;
+	--version)
+    echo -n "1.5.0 "
+     ;;
+    --cflags)
+    echo -n "-I/home/no1rabbit/cloud/.conda/include "
+      ;;
+    --libs)
+      echo -n "-L/home/no1rabbit/cloud/.conda/lib -lkea "
+      ;;
+    --ldflags)
+      echo -n "/home/no1rabbit/cloud/.conda/lib "
+      ;;
+    --includes)
+      echo -n "/home/no1rabbit/cloud/.conda/include "
+      ;;
+	--hdfincludes)
+      echo -n " /home/no1rabbit/cloud/.conda/include "
+      ;;
+	--hdfcflags)
+      echo -n " -I/home/no1rabbit/cloud/.conda/include "
+      ;;
+	--hdflibs)
+      echo -n " -L/home/no1rabbit/cloud/.conda/lib -lhdf5_cpp -lhdf5 "
+      ;;
+  esac
+  shift
+done
+echo

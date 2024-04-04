@@ -1,0 +1,14 @@
+prefix=/home/no1rabbit/cloud/.conda
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpgtypes
+Description: PostgreSQL libpgtypes library
+Url: https://www.postgresql.org/
+Version: 15.2
+Requires: 
+Requires.private: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpgtypes
+Libs.private: -L/home/no1rabbit/cloud/.conda/lib -lpgcommon -lpgport -lm

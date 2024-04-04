@@ -1,0 +1,17 @@
+CONFIG_VERSION=3.6.3
+CONFIG_INST_PREFIX=/home/no1rabbit/cloud/.conda
+CONFIG_INST_LIBS=-L/home/no1rabbit/cloud/.conda/lib -lgdal
+CONFIG_INST_CFLAGS=-I/home/no1rabbit/cloud/.conda/include
+CONFIG_INST_DATA=/home/no1rabbit/cloud/.conda/share/gdal
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Libs.private: -liconv -lssl -lcrypto -llzma -ldeflate -llz4 -lgeotiff -ltiff -lLerc -ljpeg -lpoppler -lpng -lgif -lnetcdf -ldl -lhdf5_hl -lzip -lzstd -lbz2 -lblosc -lcfitsio -lcurl -lwebp -ldf -lmfhdf -lkea -lhdf5_cpp -lhdf5 -lopenjp2 -ltiledb -lkmlbase -lkmldom -lkmlengine -lminizip -luriparser -lz -lpcre2-8 -lspatialite -lsqlite3 -lxerces-c -lpq -lfreexl -lexpat -lxml2 -lgeos_c -lproj -ljson-c -lpthread -lstdc++ -lm
+Cflags: ${CONFIG_INST_CFLAGS}

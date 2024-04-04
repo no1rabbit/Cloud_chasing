@@ -1,0 +1,264 @@
+{
+  "build": "nompi_hd2e9713_102",
+  "build_number": 102,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "bzip2 >=1.0.8,<2.0a0",
+    "curl",
+    "hdf4 >=4.2.15,<4.2.16.0a0",
+    "hdf5 * nompi_*",
+    "hdf5 >=1.12.2,<1.12.3.0a0",
+    "libgcc-ng >=12",
+    "libjpeg-turbo >=2.1.5.1,<3.0a0",
+    "libstdcxx-ng >=12",
+    "libxml2 >=2.10.3,<3.0.0a0",
+    "libzip >=1.9.2,<2.0a0",
+    "libzlib >=1.2.13,<1.3.0a0",
+    "zstd >=1.5.2,<1.6.0a0"
+  ],
+  "extracted_package_dir": "/home/no1rabbit/miniconda3/pkgs/libnetcdf-4.9.1-nompi_hd2e9713_102",
+  "features": "",
+  "files": [
+    "bin/nc-config",
+    "bin/nccopy",
+    "bin/ncdump",
+    "bin/ncgen",
+    "bin/ncgen3",
+    "include/netcdf.h",
+    "include/netcdf_aux.h",
+    "include/netcdf_dispatch.h",
+    "include/netcdf_filter.h",
+    "include/netcdf_filter_build.h",
+    "include/netcdf_json.h",
+    "include/netcdf_mem.h",
+    "include/netcdf_meta.h",
+    "lib/cmake/netCDF/netCDFConfig.cmake",
+    "lib/cmake/netCDF/netCDFConfigVersion.cmake",
+    "lib/cmake/netCDF/netCDFTargets-release.cmake",
+    "lib/cmake/netCDF/netCDFTargets.cmake",
+    "lib/libnetcdf.settings",
+    "lib/libnetcdf.so",
+    "lib/libnetcdf.so.19",
+    "lib/pkgconfig/netcdf.pc",
+    "share/man/man1/nccopy.1",
+    "share/man/man1/ncdump.1",
+    "share/man/man1/ncgen.1",
+    "share/man/man1/ncgen3.1",
+    "share/man/man3/netcdf.3"
+  ],
+  "fn": "libnetcdf-4.9.1-nompi_hd2e9713_102.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/no1rabbit/miniconda3/pkgs/libnetcdf-4.9.1-nompi_hd2e9713_102",
+    "type": 1
+  },
+  "md5": "f2c2b7f450f14a2a2d2891183b7bff52",
+  "name": "libnetcdf",
+  "package_tarball_full_path": "/home/no1rabbit/miniconda3/pkgs/libnetcdf-4.9.1-nompi_hd2e9713_102.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/nc-config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "b1fe7626583cf6a952b15e2ed9fd0a16c9c79b968d9e0c2502be134f1b8e9102",
+        "sha256_in_prefix": "0d3af4edb36cf33bdef670489cd1429678931e33acab6d1d39d216f4d3666a32",
+        "size_in_bytes": 12658
+      },
+      {
+        "_path": "bin/nccopy",
+        "path_type": "hardlink",
+        "sha256": "1015b2e45bad2d09c5dc7c41109076964721dc39ff4aefa69e22fc72fd3ca732",
+        "sha256_in_prefix": "1015b2e45bad2d09c5dc7c41109076964721dc39ff4aefa69e22fc72fd3ca732",
+        "size_in_bytes": 73656
+      },
+      {
+        "_path": "bin/ncdump",
+        "path_type": "hardlink",
+        "sha256": "89c5e58e206276c8b6393eaa44126cd88559ce26eaa76ead0679d72c7a622ca1",
+        "sha256_in_prefix": "89c5e58e206276c8b6393eaa44126cd88559ce26eaa76ead0679d72c7a622ca1",
+        "size_in_bytes": 108240
+      },
+      {
+        "_path": "bin/ncgen",
+        "path_type": "hardlink",
+        "sha256": "163fe333d9f2e5d6326219c7cb65f4f40ab5b28b2cc3df9ccdca4bf7bbe05b8c",
+        "sha256_in_prefix": "163fe333d9f2e5d6326219c7cb65f4f40ab5b28b2cc3df9ccdca4bf7bbe05b8c",
+        "size_in_bytes": 236672
+      },
+      {
+        "_path": "bin/ncgen3",
+        "path_type": "hardlink",
+        "sha256": "febd6e73e746f172837f70f00100db075b10f24392f7260cb1c2824afefcb227",
+        "sha256_in_prefix": "febd6e73e746f172837f70f00100db075b10f24392f7260cb1c2824afefcb227",
+        "size_in_bytes": 101648
+      },
+      {
+        "_path": "include/netcdf.h",
+        "path_type": "hardlink",
+        "sha256": "0aba52d77eb2d09e9932c5578b1209f12371d59e241a7a555117085d42a6d19d",
+        "sha256_in_prefix": "0aba52d77eb2d09e9932c5578b1209f12371d59e241a7a555117085d42a6d19d",
+        "size_in_bytes": 73256
+      },
+      {
+        "_path": "include/netcdf_aux.h",
+        "path_type": "hardlink",
+        "sha256": "9e81b61921840fa65d4b54ada7d27876a31ea945e1d82cb6a0b03971a9cf2c13",
+        "sha256_in_prefix": "9e81b61921840fa65d4b54ada7d27876a31ea945e1d82cb6a0b03971a9cf2c13",
+        "size_in_bytes": 3670
+      },
+      {
+        "_path": "include/netcdf_dispatch.h",
+        "path_type": "hardlink",
+        "sha256": "6d2aac4793e12c7ae37323be50372cfc6fd814cacaa8b622d101ec20a0e3a7f5",
+        "sha256_in_prefix": "6d2aac4793e12c7ae37323be50372cfc6fd814cacaa8b622d101ec20a0e3a7f5",
+        "size_in_bytes": 13071
+      },
+      {
+        "_path": "include/netcdf_filter.h",
+        "path_type": "hardlink",
+        "sha256": "bfb85f1fe445e7732b361de99a21f8def2f354fe5f5a2a3e440fa119a39c0329",
+        "sha256_in_prefix": "bfb85f1fe445e7732b361de99a21f8def2f354fe5f5a2a3e440fa119a39c0329",
+        "size_in_bytes": 4065
+      },
+      {
+        "_path": "include/netcdf_filter_build.h",
+        "path_type": "hardlink",
+        "sha256": "2792201071bc2038ce029d922bd11a525bedba3ef28223428075ce4475997406",
+        "sha256_in_prefix": "2792201071bc2038ce029d922bd11a525bedba3ef28223428075ce4475997406",
+        "size_in_bytes": 7080
+      },
+      {
+        "_path": "include/netcdf_json.h",
+        "path_type": "hardlink",
+        "sha256": "5db45a76348b3f6e282d518973924382aab8906ca96d99a56a51f3c5429454c7",
+        "sha256_in_prefix": "5db45a76348b3f6e282d518973924382aab8906ca96d99a56a51f3c5429454c7",
+        "size_in_bytes": 32459
+      },
+      {
+        "_path": "include/netcdf_mem.h",
+        "path_type": "hardlink",
+        "sha256": "0bf58dc001590f3bb090fc6ae95c955d566d4ad02ade9474b888310c7528c82f",
+        "sha256_in_prefix": "0bf58dc001590f3bb090fc6ae95c955d566d4ad02ade9474b888310c7528c82f",
+        "size_in_bytes": 1337
+      },
+      {
+        "_path": "include/netcdf_meta.h",
+        "path_type": "hardlink",
+        "sha256": "f2d70be223d1f8f5005e743da12e30140553d5db085439dca925b411b1d3dab7",
+        "sha256_in_prefix": "f2d70be223d1f8f5005e743da12e30140553d5db085439dca925b411b1d3dab7",
+        "size_in_bytes": 3088
+      },
+      {
+        "_path": "lib/cmake/netCDF/netCDFConfig.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "a30d115a806215b26d990a8120d483b73000c51e76e775dfb187ce7b53343cd0",
+        "sha256_in_prefix": "a75dd1b7b060c67e4cc04d940dd56274b4e718876fe6a1dc6f8b65a6dc08cf5b",
+        "size_in_bytes": 3519
+      },
+      {
+        "_path": "lib/cmake/netCDF/netCDFConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "f31bc42309e4eedf584ec2d1930e8d70dc7ccb3401f5c0a8443314792ce6c415",
+        "sha256_in_prefix": "f31bc42309e4eedf584ec2d1930e8d70dc7ccb3401f5c0a8443314792ce6c415",
+        "size_in_bytes": 2878
+      },
+      {
+        "_path": "lib/cmake/netCDF/netCDFTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "9d480bd454a4388e7cb85144cbdfceb9ac2b72e59cfc9a037f07eb97ed899cbc",
+        "sha256_in_prefix": "9d480bd454a4388e7cb85144cbdfceb9ac2b72e59cfc9a037f07eb97ed899cbc",
+        "size_in_bytes": 845
+      },
+      {
+        "_path": "lib/cmake/netCDF/netCDFTargets.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "3a2edfe8a10c860f8c2de5af628d7ecf2f0d388f8e181b52160d59a87fe41df8",
+        "sha256_in_prefix": "beaa802ae46614bbf8d2dacf5a8de74754db21f065d026dac7a14c36d8bdcd2a",
+        "size_in_bytes": 6798
+      },
+      {
+        "_path": "lib/libnetcdf.settings",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "4d4f3af5121db52c283cc2d29e8da66785b988cf96c301b909e540c8ee0d2f3f",
+        "sha256_in_prefix": "5ff54c190e6be534704ed703880752c058518493425c19708585de9952437de7",
+        "size_in_bytes": 3471
+      },
+      {
+        "_path": "lib/libnetcdf.so",
+        "path_type": "softlink",
+        "sha256": "cc1d371b8ee63302256a771a7399d595dd0cebb6601a42973d7ca0e3d71a8c33",
+        "size_in_bytes": 1843472
+      },
+      {
+        "_path": "lib/libnetcdf.so.19",
+        "path_type": "hardlink",
+        "sha256": "cc1d371b8ee63302256a771a7399d595dd0cebb6601a42973d7ca0e3d71a8c33",
+        "sha256_in_prefix": "cc1d371b8ee63302256a771a7399d595dd0cebb6601a42973d7ca0e3d71a8c33",
+        "size_in_bytes": 1843472
+      },
+      {
+        "_path": "lib/pkgconfig/netcdf.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "3e9b2f4a88dcd36190c750374fa5c691921e36955736bac9e8cabff3aec55647",
+        "sha256_in_prefix": "02dc6e678444b7720cb1da694e71b3c98e3bc137f3959642b5461e2077b481bb",
+        "size_in_bytes": 1438
+      },
+      {
+        "_path": "share/man/man1/nccopy.1",
+        "path_type": "hardlink",
+        "sha256": "5210bf6e00d599e0fb782506f65f15fe5fcfc4ac94ccc28cfa1bdaba8ad33304",
+        "sha256_in_prefix": "5210bf6e00d599e0fb782506f65f15fe5fcfc4ac94ccc28cfa1bdaba8ad33304",
+        "size_in_bytes": 21304
+      },
+      {
+        "_path": "share/man/man1/ncdump.1",
+        "path_type": "hardlink",
+        "sha256": "196c301da3041c3fad1a63a83374215ea8d7f39de3f7701d0453d7957cfd2e96",
+        "sha256_in_prefix": "196c301da3041c3fad1a63a83374215ea8d7f39de3f7701d0453d7957cfd2e96",
+        "size_in_bytes": 13246
+      },
+      {
+        "_path": "share/man/man1/ncgen.1",
+        "path_type": "hardlink",
+        "sha256": "192342a402551ea9db4303e978882c43286b657cb729c51620f75eb5a9fe65d4",
+        "sha256_in_prefix": "192342a402551ea9db4303e978882c43286b657cb729c51620f75eb5a9fe65d4",
+        "size_in_bytes": 43270
+      },
+      {
+        "_path": "share/man/man1/ncgen3.1",
+        "path_type": "hardlink",
+        "sha256": "4112c645357f7e85292dc96ab350c292433ed3a9b86b31d36fb590276a89f5c4",
+        "sha256_in_prefix": "4112c645357f7e85292dc96ab350c292433ed3a9b86b31d36fb590276a89f5c4",
+        "size_in_bytes": 15040
+      },
+      {
+        "_path": "share/man/man3/netcdf.3",
+        "path_type": "hardlink",
+        "sha256": "e36a315eb2ae0c07b2f5b80659e931362fa7562c10aff835d49b2e6c05460771",
+        "sha256_in_prefix": "e36a315eb2ae0c07b2f5b80659e931362fa7562c10aff835d49b2e6c05460771",
+        "size_in_bytes": 63922
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "921fc17bfd048b3cf15d2411bd7840484cb4a96beecda9e28c463f445e67d014",
+  "size": 809071,
+  "subdir": "linux-64",
+  "timestamp": 1678308465893,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libnetcdf-4.9.1-nompi_hd2e9713_102.conda",
+  "version": "4.9.1"
+}

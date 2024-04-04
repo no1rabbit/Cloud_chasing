@@ -1,0 +1,8 @@
+poppler_datadir=/home/no1rabbit/cloud/.conda/share/poppler
+
+Name: poppler-data
+Description: Encoding files for use with poppler
+Version: 0.4.11
+
+Cflags: -DPOPPLER_DATADIR=/home/no1rabbit/cloud/.conda/share/poppler
+

@@ -1,0 +1,3 @@
+eval "$(/home/no1rabbit/miniconda3/bin/conda shell.posix hook)"
+conda activate  /home/no1rabbit/cloud/.conda
+/home/no1rabbit/cloud/.conda/bin/python -m pip install -U -r /home/no1rabbit/cloud/condaenv.lum8_e4d.requirements.txt --exists-action=b

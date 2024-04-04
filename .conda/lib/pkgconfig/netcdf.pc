@@ -1,0 +1,13 @@
+prefix=/home/no1rabbit/cloud/.conda
+exec_prefix=/home/no1rabbit/cloud/.conda
+libdir=/home/no1rabbit/cloud/.conda/lib
+includedir=/home/no1rabbit/cloud/.conda/include
+ccompiler=/home/conda/feedstock_root/build_artifacts/libnetcdf_1678308194990/_build_env/bin/x86_64-conda-linux-gnu-cc
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: https://www.unidata.ucar.edu/netcdf
+Version: 4.9.1
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lmfhdf -ldf -lhdf5_hl -lhdf5 -lm -lz -lzip -lzstd -lbz2 -lcurl -lxml2
+Cflags: -I${includedir}

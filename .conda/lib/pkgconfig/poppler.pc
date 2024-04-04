@@ -1,0 +1,10 @@
+prefix=/home/no1rabbit/cloud/.conda
+libdir=/home/no1rabbit/cloud/.conda/lib
+includedir=/home/no1rabbit/cloud/.conda/include
+
+Name: poppler
+Description: PDF rendering library
+Version: 23.03.0
+
+Libs: -L${libdir} -lpoppler
+Cflags: -I${includedir}/poppler

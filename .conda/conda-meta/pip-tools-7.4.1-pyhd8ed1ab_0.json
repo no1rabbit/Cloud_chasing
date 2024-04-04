@@ -1,0 +1,419 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "click >=7",
+    "pip >=21.2",
+    "python >=3.7",
+    "python-build",
+    "setuptools",
+    "wheel"
+  ],
+  "extracted_package_dir": "/home/no1rabbit/miniconda3/pkgs/pip-tools-7.4.1-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/LICENSE",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/METADATA",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/RECORD",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/WHEEL",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/entry_points.txt",
+    "lib/python3.10/site-packages/pip_tools-7.4.1.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/piptools/__init__.py",
+    "lib/python3.10/site-packages/piptools/__main__.py",
+    "lib/python3.10/site-packages/piptools/_compat/__init__.py",
+    "lib/python3.10/site-packages/piptools/_compat/pip_compat.py",
+    "lib/python3.10/site-packages/piptools/build.py",
+    "lib/python3.10/site-packages/piptools/cache.py",
+    "lib/python3.10/site-packages/piptools/exceptions.py",
+    "lib/python3.10/site-packages/piptools/locations.py",
+    "lib/python3.10/site-packages/piptools/logging.py",
+    "lib/python3.10/site-packages/piptools/py.typed",
+    "lib/python3.10/site-packages/piptools/repositories/__init__.py",
+    "lib/python3.10/site-packages/piptools/repositories/base.py",
+    "lib/python3.10/site-packages/piptools/repositories/local.py",
+    "lib/python3.10/site-packages/piptools/repositories/pypi.py",
+    "lib/python3.10/site-packages/piptools/resolver.py",
+    "lib/python3.10/site-packages/piptools/scripts/__init__.py",
+    "lib/python3.10/site-packages/piptools/scripts/compile.py",
+    "lib/python3.10/site-packages/piptools/scripts/options.py",
+    "lib/python3.10/site-packages/piptools/scripts/sync.py",
+    "lib/python3.10/site-packages/piptools/subprocess_utils.py",
+    "lib/python3.10/site-packages/piptools/sync.py",
+    "lib/python3.10/site-packages/piptools/utils.py",
+    "lib/python3.10/site-packages/piptools/writer.py",
+    "lib/python3.10/site-packages/piptools/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/_compat/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/_compat/__pycache__/pip_compat.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/build.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/cache.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/exceptions.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/locations.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/logging.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/repositories/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/repositories/__pycache__/base.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/repositories/__pycache__/local.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/repositories/__pycache__/pypi.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/resolver.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/scripts/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/scripts/__pycache__/compile.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/scripts/__pycache__/options.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/scripts/__pycache__/sync.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/subprocess_utils.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/sync.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/utils.cpython-310.pyc",
+    "lib/python3.10/site-packages/piptools/__pycache__/writer.cpython-310.pyc",
+    "bin/pip-compile",
+    "bin/pip-sync"
+  ],
+  "fn": "pip-tools-7.4.1-pyhd8ed1ab_0.conda",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/no1rabbit/miniconda3/pkgs/pip-tools-7.4.1-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "73203bd783da9c37c2cdabb1f3b9d44d",
+  "name": "pip-tools",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/no1rabbit/miniconda3/pkgs/pip-tools-7.4.1-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "075f22737ed9245d386a23968c7ec906f66dfb7af35c3ff920aabd165a8ae920",
+        "sha256_in_prefix": "075f22737ed9245d386a23968c7ec906f66dfb7af35c3ff920aabd165a8ae920",
+        "size_in_bytes": 1522
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "57a0440a8fa058e863da1b02cbadce2c529625344ab4ce127944d87b72d7b5e0",
+        "sha256_in_prefix": "57a0440a8fa058e863da1b02cbadce2c529625344ab4ce127944d87b72d7b5e0",
+        "size_in_bytes": 26057
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "126e3ca9ba370a14439aafae135b1f629ba942cdba1e8c86d6c0073e07b4b53c",
+        "sha256_in_prefix": "126e3ca9ba370a14439aafae135b1f629ba942cdba1e8c86d6c0073e07b4b53c",
+        "size_in_bytes": 3958
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "a2241587fe4f9d033413780f762cf4f5608d9b08870cc6867abfde96a0777283",
+        "sha256_in_prefix": "a2241587fe4f9d033413780f762cf4f5608d9b08870cc6867abfde96a0777283",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "8e0ea0f02990fece379179e47248080ed60d6ce635707149cb2ff9ff231d1948",
+        "sha256_in_prefix": "8e0ea0f02990fece379179e47248080ed60d6ce635707149cb2ff9ff231d1948",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "33ef8e3065980cdc05904257a78f19af5f7f3f36c463a1687154e7c9d89ee628",
+        "sha256_in_prefix": "33ef8e3065980cdc05904257a78f19af5f7f3f36c463a1687154e7c9d89ee628",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "site-packages/pip_tools-7.4.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ff5ea7bdfa30f8410d375250fd68d8edb16ba09bdbe48607e712c81dcde477b5",
+        "sha256_in_prefix": "ff5ea7bdfa30f8410d375250fd68d8edb16ba09bdbe48607e712c81dcde477b5",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/piptools/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3e16d556ca9df3a80d9865a2502de581af614bb1f670e9ecc5678c1160b0c10e",
+        "sha256_in_prefix": "3e16d556ca9df3a80d9865a2502de581af614bb1f670e9ecc5678c1160b0c10e",
+        "size_in_bytes": 398
+      },
+      {
+        "_path": "site-packages/piptools/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "9a96bdaddd69fe173c861585fd70eff4d9317582a672ab0c05f7c98849e75a1f",
+        "sha256_in_prefix": "9a96bdaddd69fe173c861585fd70eff4d9317582a672ab0c05f7c98849e75a1f",
+        "size_in_bytes": 290
+      },
+      {
+        "_path": "site-packages/piptools/_compat/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f1c5de21812828e6d651452ab9baa3a48e130bd80108025b6703be43d7126f12",
+        "sha256_in_prefix": "f1c5de21812828e6d651452ab9baa3a48e130bd80108025b6703be43d7126f12",
+        "size_in_bytes": 291
+      },
+      {
+        "_path": "site-packages/piptools/_compat/pip_compat.py",
+        "path_type": "hardlink",
+        "sha256": "d15872e57e7382c9e16583dacb9558cd67455a176e52e46920b695112bff2d85",
+        "sha256_in_prefix": "d15872e57e7382c9e16583dacb9558cd67455a176e52e46920b695112bff2d85",
+        "size_in_bytes": 3609
+      },
+      {
+        "_path": "site-packages/piptools/build.py",
+        "path_type": "hardlink",
+        "sha256": "8f7b5ec9ce0e5764acca641e73543ece284218fec04c147e148d3a4b75fae4d0",
+        "sha256_in_prefix": "8f7b5ec9ce0e5764acca641e73543ece284218fec04c147e148d3a4b75fae4d0",
+        "size_in_bytes": 5806
+      },
+      {
+        "_path": "site-packages/piptools/cache.py",
+        "path_type": "hardlink",
+        "sha256": "072db0ef094ae017b261ce27e3df51ea6ac005a978934bb3d3320742d280678e",
+        "sha256_in_prefix": "072db0ef094ae017b261ce27e3df51ea6ac005a978934bb3d3320742d280678e",
+        "size_in_bytes": 6057
+      },
+      {
+        "_path": "site-packages/piptools/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "3b11196b37a4944fd4d1645d6fccfaa422aec6190e4434d3bb107d27987a93aa",
+        "sha256_in_prefix": "3b11196b37a4944fd4d1645d6fccfaa422aec6190e4434d3bb107d27987a93aa",
+        "size_in_bytes": 2459
+      },
+      {
+        "_path": "site-packages/piptools/locations.py",
+        "path_type": "hardlink",
+        "sha256": "5850ac209dd06dd15f59528ddbc49c07ab0164bb2c37484811bd951aba8b1b51",
+        "sha256_in_prefix": "5850ac209dd06dd15f59528ddbc49c07ab0164bb2c37484811bd951aba8b1b51",
+        "size_in_bytes": 339
+      },
+      {
+        "_path": "site-packages/piptools/logging.py",
+        "path_type": "hardlink",
+        "sha256": "50eba41161aae7e0433d41ea9fced04627c58fe60d6842314691228644afb1bc",
+        "sha256_in_prefix": "50eba41161aae7e0433d41ea9fced04627c58fe60d6842314691228644afb1bc",
+        "size_in_bytes": 1990
+      },
+      {
+        "_path": "site-packages/piptools/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/piptools/repositories/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f76f2e8b21895a73285f29032cde844e2ea820cf9346978a56383c9198408b9d",
+        "sha256_in_prefix": "f76f2e8b21895a73285f29032cde844e2ea820cf9346978a56383c9198408b9d",
+        "size_in_bytes": 177
+      },
+      {
+        "_path": "site-packages/piptools/repositories/base.py",
+        "path_type": "hardlink",
+        "sha256": "21c909d97e21b4394514848b7e77d7c698e7b09906859ffeafca737a9b109e29",
+        "sha256_in_prefix": "21c909d97e21b4394514848b7e77d7c698e7b09906859ffeafca737a9b109e29",
+        "size_in_bytes": 2358
+      },
+      {
+        "_path": "site-packages/piptools/repositories/local.py",
+        "path_type": "hardlink",
+        "sha256": "b7d46efcd52187ab6dd6441dcffecd9425b2eeb5f52f6eb8e2a528e0073b03df",
+        "sha256_in_prefix": "b7d46efcd52187ab6dd6441dcffecd9425b2eeb5f52f6eb8e2a528e0073b03df",
+        "size_in_bytes": 3703
+      },
+      {
+        "_path": "site-packages/piptools/repositories/pypi.py",
+        "path_type": "hardlink",
+        "sha256": "4123975da96ab47943c1247d18b2d801fcde238b3f82ed80d438eb920f76950c",
+        "sha256_in_prefix": "4123975da96ab47943c1247d18b2d801fcde238b3f82ed80d438eb920f76950c",
+        "size_in_bytes": 19327
+      },
+      {
+        "_path": "site-packages/piptools/resolver.py",
+        "path_type": "hardlink",
+        "sha256": "cef1f02e72452db9540ccec33d6a70b8352af09e43d9830923907d58dd6b7d67",
+        "sha256_in_prefix": "cef1f02e72452db9540ccec33d6a70b8352af09e43d9830923907d58dd6b7d67",
+        "size_in_bytes": 30499
+      },
+      {
+        "_path": "site-packages/piptools/scripts/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/piptools/scripts/compile.py",
+        "path_type": "hardlink",
+        "sha256": "351ddc5ac94e908ef61e18062dcbd597c276bf8843d615229d6278979e21714a",
+        "sha256_in_prefix": "351ddc5ac94e908ef61e18062dcbd597c276bf8843d615229d6278979e21714a",
+        "size_in_bytes": 18158
+      },
+      {
+        "_path": "site-packages/piptools/scripts/options.py",
+        "path_type": "hardlink",
+        "sha256": "be6030a6049a0b9fee153445ff9925767343055ca46995a489342909c8bd9533",
+        "sha256_in_prefix": "be6030a6049a0b9fee153445ff9925767343055ca46995a489342909c8bd9533",
+        "size_in_bytes": 9774
+      },
+      {
+        "_path": "site-packages/piptools/scripts/sync.py",
+        "path_type": "hardlink",
+        "sha256": "6e244237e9365ee796984c9ec54ea9d5b32c33f9525398e3164628afce32a8d9",
+        "sha256_in_prefix": "6e244237e9365ee796984c9ec54ea9d5b32c33f9525398e3164628afce32a8d9",
+        "size_in_bytes": 7672
+      },
+      {
+        "_path": "site-packages/piptools/subprocess_utils.py",
+        "path_type": "hardlink",
+        "sha256": "30b55fa2fb1bf8095662184769034edca6d03c37b7dd5b4755413fc7a8d58668",
+        "sha256_in_prefix": "30b55fa2fb1bf8095662184769034edca6d03c37b7dd5b4755413fc7a8d58668",
+        "size_in_bytes": 578
+      },
+      {
+        "_path": "site-packages/piptools/sync.py",
+        "path_type": "hardlink",
+        "sha256": "c6641bda331a810e5ff3a333145a795bb1347ba6d6f2174709831fbde1b5b32d",
+        "sha256_in_prefix": "c6641bda331a810e5ff3a333145a795bb1347ba6d6f2174709831fbde1b5b32d",
+        "size_in_bytes": 9033
+      },
+      {
+        "_path": "site-packages/piptools/utils.py",
+        "path_type": "hardlink",
+        "sha256": "869dd7dc77de6bcdcc1ff7da318c8503b4ee9db2f052ef7d24388dec290a6d89",
+        "sha256_in_prefix": "869dd7dc77de6bcdcc1ff7da318c8503b4ee9db2f052ef7d24388dec290a6d89",
+        "size_in_bytes": 25238
+      },
+      {
+        "_path": "site-packages/piptools/writer.py",
+        "path_type": "hardlink",
+        "sha256": "1b35b1253fc1fd5c089005371907d9012525b475f0255dda599faa9fcd7b6d56",
+        "sha256_in_prefix": "1b35b1253fc1fd5c089005371907d9012525b475f0255dda599faa9fcd7b6d56",
+        "size_in_bytes": 11287
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/_compat/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/_compat/__pycache__/pip_compat.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/build.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/cache.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/exceptions.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/locations.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/logging.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/repositories/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/repositories/__pycache__/base.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/repositories/__pycache__/local.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/repositories/__pycache__/pypi.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/resolver.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/scripts/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/scripts/__pycache__/compile.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/scripts/__pycache__/options.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/scripts/__pycache__/sync.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/subprocess_utils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/sync.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/utils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/piptools/__pycache__/writer.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/pip-compile",
+        "path_type": "unix_python_entry_point"
+      },
+      {
+        "_path": "bin/pip-sync",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pip-tools",
+  "sha256": "5534c19a6233faed1c9109782322c9d31e536ce20448f8c90db3d864fb8f226d",
+  "size": 54113,
+  "subdir": "noarch",
+  "timestamp": 1709736180083,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pip-tools-7.4.1-pyhd8ed1ab_0.conda",
+  "version": "7.4.1"
+}

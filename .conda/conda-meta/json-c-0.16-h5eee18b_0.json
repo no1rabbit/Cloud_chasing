@@ -1,0 +1,222 @@
+{
+  "build": "h5eee18b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=11.2.0"
+  ],
+  "extracted_package_dir": "/home/no1rabbit/miniconda3/pkgs/json-c-0.16-h5eee18b_0",
+  "features": "",
+  "files": [
+    "include/json-c/arraylist.h",
+    "include/json-c/debug.h",
+    "include/json-c/json.h",
+    "include/json-c/json_c_version.h",
+    "include/json-c/json_config.h",
+    "include/json-c/json_inttypes.h",
+    "include/json-c/json_object.h",
+    "include/json-c/json_object_iterator.h",
+    "include/json-c/json_pointer.h",
+    "include/json-c/json_tokener.h",
+    "include/json-c/json_types.h",
+    "include/json-c/json_util.h",
+    "include/json-c/json_visit.h",
+    "include/json-c/linkhash.h",
+    "include/json-c/printbuf.h",
+    "lib/cmake/json-c/json-c-config.cmake",
+    "lib/cmake/json-c/json-c-targets-release.cmake",
+    "lib/cmake/json-c/json-c-targets.cmake",
+    "lib/libjson-c.a",
+    "lib/libjson-c.so",
+    "lib/libjson-c.so.5",
+    "lib/libjson-c.so.5.2.0",
+    "lib/pkgconfig/json-c.pc"
+  ],
+  "fn": "json-c-0.16-h5eee18b_0.conda",
+  "legacy_bz2_md5": "0594055417685a7b7a828c2647fb8fc3",
+  "legacy_bz2_size": 84251,
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/no1rabbit/miniconda3/pkgs/json-c-0.16-h5eee18b_0",
+    "type": 1
+  },
+  "md5": "65bd539eb8eb5319d79e243829a58f0f",
+  "name": "json-c",
+  "package_tarball_full_path": "/home/no1rabbit/miniconda3/pkgs/json-c-0.16-h5eee18b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/json-c/arraylist.h",
+        "path_type": "hardlink",
+        "sha256": "fb68f701485d9b6fb1fbff51859692d6cb4af4b8e7663cf04d6d319cefcb30a9",
+        "sha256_in_prefix": "fb68f701485d9b6fb1fbff51859692d6cb4af4b8e7663cf04d6d319cefcb30a9",
+        "size_in_bytes": 2512
+      },
+      {
+        "_path": "include/json-c/debug.h",
+        "path_type": "hardlink",
+        "sha256": "41e878c2f47ad099074dacbb62fd49148decdddae63ddec7922643e32baea1db",
+        "sha256_in_prefix": "41e878c2f47ad099074dacbb62fd49148decdddae63ddec7922643e32baea1db",
+        "size_in_bytes": 2703
+      },
+      {
+        "_path": "include/json-c/json.h",
+        "path_type": "hardlink",
+        "sha256": "346be1c0e2f3a624c099805a40229a6fbaf944fbc5fb56f149fdce9b7d8c4c6c",
+        "sha256_in_prefix": "346be1c0e2f3a624c099805a40229a6fbaf944fbc5fb56f149fdce9b7d8c4c6c",
+        "size_in_bytes": 810
+      },
+      {
+        "_path": "include/json-c/json_c_version.h",
+        "path_type": "hardlink",
+        "sha256": "7d359c1488238e4ce5a8ffc7fc91d419484c36b0b01812603de7a186d701cb95",
+        "sha256_in_prefix": "7d359c1488238e4ce5a8ffc7fc91d419484c36b0b01812603de7a186d701cb95",
+        "size_in_bytes": 1373
+      },
+      {
+        "_path": "include/json-c/json_config.h",
+        "path_type": "hardlink",
+        "sha256": "cb259c1133e174a76284adf58f395bd4685f28e91672e45f385d62b0b343646f",
+        "sha256_in_prefix": "cb259c1133e174a76284adf58f395bd4685f28e91672e45f385d62b0b343646f",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "include/json-c/json_inttypes.h",
+        "path_type": "hardlink",
+        "sha256": "4f62f50941271c0392c092990f0141241a0d6d45ce27bf9bdded9caa176de8bb",
+        "sha256_in_prefix": "4f62f50941271c0392c092990f0141241a0d6d45ce27bf9bdded9caa176de8bb",
+        "size_in_bytes": 372
+      },
+      {
+        "_path": "include/json-c/json_object.h",
+        "path_type": "hardlink",
+        "sha256": "643bc8b3e55e41306eb10c1b691d3b39fd6fc38adec5cec4513e9403d9412304",
+        "sha256_in_prefix": "643bc8b3e55e41306eb10c1b691d3b39fd6fc38adec5cec4513e9403d9412304",
+        "size_in_bytes": 43341
+      },
+      {
+        "_path": "include/json-c/json_object_iterator.h",
+        "path_type": "hardlink",
+        "sha256": "5e708aa326cd6dd86b6e0817acf57d3084512028c8990c49ed6824b9d3c773d3",
+        "sha256_in_prefix": "5e708aa326cd6dd86b6e0817acf57d3084512028c8990c49ed6824b9d3c773d3",
+        "size_in_bytes": 8394
+      },
+      {
+        "_path": "include/json-c/json_pointer.h",
+        "path_type": "hardlink",
+        "sha256": "49d2f0530cb66e7163fa2dd4304c96319955e212c6922111347f9222d69df2a2",
+        "sha256_in_prefix": "49d2f0530cb66e7163fa2dd4304c96319955e212c6922111347f9222d69df2a2",
+        "size_in_bytes": 5007
+      },
+      {
+        "_path": "include/json-c/json_tokener.h",
+        "path_type": "hardlink",
+        "sha256": "9a8902baffaff0ef6d75ae42d066651292dbf9dab1f594be74ad928176b83cbf",
+        "sha256_in_prefix": "9a8902baffaff0ef6d75ae42d066651292dbf9dab1f594be74ad928176b83cbf",
+        "size_in_bytes": 10494
+      },
+      {
+        "_path": "include/json-c/json_types.h",
+        "path_type": "hardlink",
+        "sha256": "fc4f78e373ca0e6e349d3b2ce0d162088e63704b3db3b50f80766a81bfecf2d1",
+        "sha256_in_prefix": "fc4f78e373ca0e6e349d3b2ce0d162088e63704b3db3b50f80766a81bfecf2d1",
+        "size_in_bytes": 1666
+      },
+      {
+        "_path": "include/json-c/json_util.h",
+        "path_type": "hardlink",
+        "sha256": "64f4ad302af2daad4e9ceb616697f10a1990b9469f9b4639dd8d0cad6fca3536",
+        "sha256_in_prefix": "64f4ad302af2daad4e9ceb616697f10a1990b9469f9b4639dd8d0cad6fca3536",
+        "size_in_bytes": 3611
+      },
+      {
+        "_path": "include/json-c/json_visit.h",
+        "path_type": "hardlink",
+        "sha256": "7d647144074951c6807752e11563654ffcfb63bd35d4c341591b3b2b5a68e399",
+        "sha256_in_prefix": "7d647144074951c6807752e11563654ffcfb63bd35d4c341591b3b2b5a68e399",
+        "size_in_bytes": 3175
+      },
+      {
+        "_path": "include/json-c/linkhash.h",
+        "path_type": "hardlink",
+        "sha256": "78189fe2ca202e6b68dfe0a96f4f78ba351fbb30c75ccb02c96206b7575007bf",
+        "sha256_in_prefix": "78189fe2ca202e6b68dfe0a96f4f78ba351fbb30c75ccb02c96206b7575007bf",
+        "size_in_bytes": 12380
+      },
+      {
+        "_path": "include/json-c/printbuf.h",
+        "path_type": "hardlink",
+        "sha256": "ce5fbc9f02e27566700fe9f3c40c852f2abaf58088cda1d75139802c536e8a0f",
+        "sha256_in_prefix": "ce5fbc9f02e27566700fe9f3c40c852f2abaf58088cda1d75139802c536e8a0f",
+        "size_in_bytes": 4353
+      },
+      {
+        "_path": "lib/cmake/json-c/json-c-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "76b03e7e175a9f9e611d370a3fbd3bce1c1c32ae95763c8c9f842120fe405f20",
+        "sha256_in_prefix": "76b03e7e175a9f9e611d370a3fbd3bce1c1c32ae95763c8c9f842120fe405f20",
+        "size_in_bytes": 968
+      },
+      {
+        "_path": "lib/cmake/json-c/json-c-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "769cd4fbedebc6b9f8dea5eae8007a56ace2c46d66cc01cba2180b431f09a463",
+        "sha256_in_prefix": "769cd4fbedebc6b9f8dea5eae8007a56ace2c46d66cc01cba2180b431f09a463",
+        "size_in_bytes": 1324
+      },
+      {
+        "_path": "lib/cmake/json-c/json-c-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "3eaa3c9afdbd9114ca784c08f7c15c4d8633c6f9c08832a909325bcde5fa13c4",
+        "sha256_in_prefix": "3eaa3c9afdbd9114ca784c08f7c15c4d8633c6f9c08832a909325bcde5fa13c4",
+        "size_in_bytes": 3564
+      },
+      {
+        "_path": "lib/libjson-c.a",
+        "path_type": "hardlink",
+        "sha256": "ee490e0792a5bde6f23e27f8326221943c24614e92aefb1725cb9e398475226b",
+        "sha256_in_prefix": "ee490e0792a5bde6f23e27f8326221943c24614e92aefb1725cb9e398475226b",
+        "size_in_bytes": 147134
+      },
+      {
+        "_path": "lib/libjson-c.so",
+        "path_type": "softlink",
+        "sha256": "bb6245045a32f710889c83fd55c972177d15839869621e4cad6f9fd286d0e2df",
+        "size_in_bytes": 84296
+      },
+      {
+        "_path": "lib/libjson-c.so.5",
+        "path_type": "softlink",
+        "sha256": "bb6245045a32f710889c83fd55c972177d15839869621e4cad6f9fd286d0e2df",
+        "size_in_bytes": 84296
+      },
+      {
+        "_path": "lib/libjson-c.so.5.2.0",
+        "path_type": "hardlink",
+        "sha256": "bb6245045a32f710889c83fd55c972177d15839869621e4cad6f9fd286d0e2df",
+        "sha256_in_prefix": "bb6245045a32f710889c83fd55c972177d15839869621e4cad6f9fd286d0e2df",
+        "size_in_bytes": 84296
+      },
+      {
+        "_path": "lib/pkgconfig/json-c.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/abs_f8jeptv7a5/croots/recipe/json-c_1659123648758/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "df028ea4acb670b2a34bf1302e8a334a9af4365f7edf34d2e69fbe322a3d2f86",
+        "sha256_in_prefix": "f6a4cd482bd30b74c211f104c592e7f0b5dc4a5ee81f5c3942d36d8c5ff0e879",
+        "size_in_bytes": 1240
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "842aad528502c20a37559718eeac911415b2fd38edd62874cbed37da8f348d51",
+  "size": 78407,
+  "subdir": "linux-64",
+  "timestamp": 1659123696523,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/json-c-0.16-h5eee18b_0.conda",
+  "version": "0.16"
+}

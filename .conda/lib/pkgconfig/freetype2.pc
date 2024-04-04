@@ -1,0 +1,14 @@
+prefix=/home/no1rabbit/cloud/.conda
+exec_prefix=/home/no1rabbit/cloud/.conda
+libdir=/home/no1rabbit/cloud/.conda/lib
+includedir=/home/no1rabbit/cloud/.conda/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/home/no1rabbit/cloud/.conda/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
