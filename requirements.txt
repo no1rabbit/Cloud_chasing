@@ -993,6 +993,8 @@ urllib3==1.26.16
     #   responses
 urlpath==1.2.0
     # via odc-apps-dc-tools
+voila==0.2.16
+    # via jupyterlab
 wcwidth==0.2.7
     # via prompt-toolkit
 webcolors==1.13
